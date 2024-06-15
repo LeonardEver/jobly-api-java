@@ -20,8 +20,9 @@ public class Servico {
     private Long id;
     private String nome;
     private String descricao;
-    private double preco;
+    private String preco;
     private String duracao;
+    private String status;
 
     @Enumerated(EnumType.STRING)
     private Categoria categoria;
@@ -32,6 +33,7 @@ public class Servico {
         this.preco = dados.preco();
         this.duracao = dados.duracao();
         this.categoria = dados.categoria();
+        this.status = dados.status();
     }
 
     public void attDadosServ(DadosAttServ dados) {
@@ -44,7 +46,7 @@ public class Servico {
         if(dados.duracao() != null) {
             this.duracao = dados.duracao();
         }
-        if(dados.preco() >= 0) {
+        if(dados.preco() != null) {
             this.preco = dados.preco();
         }
     }

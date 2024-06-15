@@ -1,6 +1,7 @@
 package br.com.jobly.controller;
 
 import br.com.jobly.cliente.*;
+import br.com.jobly.cliente.ClienteRepository;
 import br.com.jobly.colaborador.Colaborador;
 import br.com.jobly.colaborador.ColaboradorRepository;
 import br.com.jobly.colaborador.DadosAttColab;

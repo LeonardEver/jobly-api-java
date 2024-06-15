@@ -4,7 +4,9 @@ public record DadosAttServ(
         Long id,
         String nome,
         String descricao,
-        double preco,
-        String duracao
+        String preco,
+        String duracao,
+
+        String status
 ) {
 }
